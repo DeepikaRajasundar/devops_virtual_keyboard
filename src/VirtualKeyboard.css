@@ -1,0 +1,239 @@
+/* src/VirtualKeyboard.css */
+
+/* Background and Layout */
+.keyboard-page {
+  background-image: url('https://images8.alphacoders.com/430/thumb-1920-430541.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ensure background covers full viewport height */
+  width: 100vw; /* Ensure background covers full viewport width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the keyboard */
+.keyboard-container {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px; /* Limit width for larger screens */
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden; /* Ensure overflow is hidden */
+}
+
+/* Header Text */
+h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Select dropdown for language selection */
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Text input area */
+.keyboard-input {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Keyboard Layout */
+.keyboard-keys {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Add spacing between buttons */
+  margin-bottom: 10px;
+  flex-wrap: wrap; /* Allow buttons to wrap if the width exceeds */
+  justify-content: center; /* Center the row of buttons */
+}
+
+/* General Button Styling */
+button {
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease;
+  width: 50px; /* Adjust width for the buttons */
+  height: 50px; /* Adjust height for consistency */
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  box-sizing: border-box; /* Ensure padding does not increase button size */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.special-key {
+  background-color: #f44336;
+}
+
+button.special-key:hover {
+  background-color: #d32f2f;
+}
+
+button:focus {
+  outline: none;
+}
+
+.keyboard-row button:active {
+  background-color: #bbb;
+  transform: scale(0.95);
+}
+
+/* Responsive Design: Adjust for smaller screen sizes */
+@media (max-width: 600px) {
+  .keyboard-container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .keyboard-keys {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .keyboard-row {
+    justify-content: flex-start; /* Ensure buttons align left in rows */
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+  }
+
+  button.special-key {
+    font-size: 16px;
+  }
+}
+
+/* Styling for Undo and Redo buttons */
+.undo-redo {
+  background-color: #2196F3; /* Blue color for undo/redo */
+  width: 100px; /* Ensure enough space between buttons */
+  height: 50px;
+  margin-right: 15px; /* Add space between undo/redo */
+  font-size: 16px;
+}
+
+.undo-redo:hover {
+  background-color: #1976D2;
+}
+
+button.undo-redo:focus {
+  outline: none;
+}
+
+/* Special styles for Backspace and Enter buttons */
+button.special-key {
+  background-color: #f44336;
+  font-size: 20px; /* Increase font size */
+  padding: 15px 25px; /* Increase padding for a larger button */
+  width: 120px; /* Increase width of the Backspace button */
+  height: 60px; /* Keep height the same or adjust if necessary */
+}
+
+button.special-key:hover {
+  background-color: #d32f2f;
+}
+
+/* Specific styling for Enter key */
+button.enter-key {
+  background-color: #4CAF50; /* Use the same color as other keys */
+  font-size: 20px; /* Increase font size */
+  padding: 15px 20px; /* Increase padding */
+  width: 180px; /* Increase width */
+  height: 160px; /* Increase height */
+}
+
+button.enter-key:hover {
+  background-color: #45a049;
+}
+/* src/VirtualKeyboard.css */
+
+/* Styling for Undo and Redo buttons with symbols */
+.undo-redo {
+  background-color: #2196F3; /* Blue color for undo/redo */
+  width: 60px; /* Slightly smaller to fit the icon */
+  height: 60px;
+  margin-right: 15px; /* Space between Undo and Redo */
+  font-size: 24px; /* Larger size for symbols */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.undo-redo:hover {
+  background-color: #1976D2;
+}
+
+.undo-redo i {
+  font-size: 30px; /* Icon size */
+}
+
+button.undo-redo:focus {
+  outline: none;
+}
+
+/* Emoji Button */
+.emoji-button {
+  background-color: #FFEB3B; /* Yellow color for Emoji */
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  font-size: 30px; /* Larger size for the emoji */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji-button:hover {
+  background-color: #FBC02D;
+}
+
+.emoji-button i {
+  font-size: 40px; /* Increase emoji size */
+}
+
+button.emoji-button:focus {
+  outline: none;
+}

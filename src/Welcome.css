@@ -1,0 +1,50 @@
+/* Welcome Page Styling */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    text-align: center;
+    background: url('https://img.freepik.com/free-vector/modern-welcome-composition-with-gradient-style_23-2147900387.jpg?t=st=1731004435~exp=1731008035~hmac=51149de2b2d0b54dcbf60a98127a2bc75189946d3198cc375fd150728379defb&w=740') no-repeat center center fixed;
+    background-size: cover; /* Ensure the background image covers the entire container */
+}
+
+.welcome-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Adding shadow for readability */
+}
+
+.welcome-container p {
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.get-started {
+    padding: 20px 50px; /* Increased padding for larger button */
+    font-size: 1.75rem; /* Larger font size for the text */
+    background-color: #4CAF50; /* Green color for the button */
+    color: white;
+    border: none;
+    border-radius: 12px; /* Slightly rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px; /* Space between text and button */
+}
+
+.get-started:hover {
+    background-color: #45a049; /* Darker green when hovered */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.get-started:active {
+    background-color: #388e3c; /* Even darker green when clicked */
+    transform: translateY(0); /* Reset transform when clicked */
+}

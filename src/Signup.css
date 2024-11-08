@@ -1,0 +1,154 @@
+/* Resetting default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Fallback for browsers that don't support the image */
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url('https://t4.ftcdn.net/jpg/08/80/29/55/240_F_880295536_wjQKTbCfJY1KKo1ANAwgBE6Ma8EHBmbF.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 0; /* To ensure the image stays at the bottom */
+}
+
+.signup-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
+    z-index: 0;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.85); /* Light background for the form */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 450px; /* Increased form width for better spacing */
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: translateY(-12px); /* Subtle hover effect */
+}
+
+h2 {
+    color: #4CAF50; /* Green color for the title */
+    font-size: 38px; /* Increased font size for more emphasis */
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Adding shadow for visibility */
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #388e3c; /* Slight hover effect */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333; /* Dark text color inside the input */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #4CAF50; /* Focus effect */
+}
+
+button {
+    width: 100%; /* Increased width to fill the container */
+    padding: 18px; /* Increased padding for a larger button */
+    background-color: #4CAF50; /* Bright green button */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-4px); /* Hover effect to lift button */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #388e3c; /* Darker green when clicked */
+    transform: translateY(0); /* Reset transform on click */
+}
+
+.message {
+    color: #f44336; /* Red color for error messages */
+    font-size: 18px; /* Larger font size for error messages */
+    margin-top: 15px;
+    font-weight: 500; /* Slightly bolder to make it stand out */
+    text-align: center; /* Center-align the error message */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px; /* Increased font size for better readability */
+    color: #f0f0f0; /* Light text color for paragraph */
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+}
+
+a {
+    color: #4CAF50; /* Green color for links */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #388e3c; /* Darker green when hovered */
+    text-decoration: underline;
+}
+
+/* Animating the form to fade in */
+.signup-container form {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
