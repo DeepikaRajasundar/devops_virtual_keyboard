@@ -1,3 +1,24 @@
+# OUTPUT
+![Screenshot 2024-11-11 223947](https://github.com/user-attachments/assets/5a79b266-3d9d-4d1f-96e1-c3f4f522fcf8)
+![Screenshot 2024-11-11 224050](https://github.com/user-attachments/assets/f6b986ea-1092-49bd-aff6-2da8dba2b31a)
+![Screenshot 2024-11-11 224115](https://github.com/user-attachments/assets/dbe59047-8b54-4dd7-bf15-a6ca10978a03)
+![Screenshot 2024-11-11 224332](https://github.com/user-attachments/assets/8b0fc4cd-7ae6-4de9-b1f9-7e4bc8a9463c)
+# DESCRPTION
+This Virtual Keyboard project is a customizable typing interface built with React. It provides support for multiple languages, font adjustments, emoji insertion, and undo/redo functionality, giving users a personalized and flexible typing experience.
+
+Features
+Multi-Language Support: Switch between keyboard layouts for different languages: English, French, German, Japanese, Tamil, and Korean.
+Undo/Redo Actions: Easily revert or redo typing actions with dedicated buttons.
+Emoji Insertion: Add emojis to your text with a built-in emoji picker.
+Font Customization: Adjust font size and font family (options include Arial, Courier New, Georgia, Times New Roman, and Verdana) for personalized text display.
+Responsive Design: The layout adapts to different screen sizes and is designed with accessibility in mind.
+Project Structure
+VirtualKeyboard.js: The main React component, managing the keyboard layout, input history, and settings.
+VirtualKeyboard.css: Contains the styling for the virtual keyboard, ensuring it’s visually appealing and responsive.
+Technology Stack
+React: Core framework for building the user interface.
+CSS: For styling and responsive layout adjustments.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
