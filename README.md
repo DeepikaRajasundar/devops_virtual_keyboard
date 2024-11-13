@@ -3,10 +3,10 @@
 ![Screenshot 2024-11-11 224050](https://github.com/user-attachments/assets/f6b986ea-1092-49bd-aff6-2da8dba2b31a)
 ![Screenshot 2024-11-11 224115](https://github.com/user-attachments/assets/dbe59047-8b54-4dd7-bf15-a6ca10978a03)
 ![Screenshot 2024-11-11 224332](https://github.com/user-attachments/assets/8b0fc4cd-7ae6-4de9-b1f9-7e4bc8a9463c)
-# DESCRPTION
+# DESCRIPTION
 This Virtual Keyboard project is a customizable typing interface built with React. It provides support for multiple languages, font adjustments, emoji insertion, and undo/redo functionality, giving users a personalized and flexible typing experience.
 
-Features
+# Features
 Multi-Language Support: Switch between keyboard layouts for different languages: English, French, German, Japanese, Tamil, and Korean.
 Undo/Redo Actions: Easily revert or redo typing actions with dedicated buttons.
 Emoji Insertion: Add emojis to your text with a built-in emoji picker.
